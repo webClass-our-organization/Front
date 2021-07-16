@@ -1,0 +1,47 @@
+---
+title: Macmillan Films
+timezone: America/New_York
+collections:
+  posts:
+    title: Posts
+    output: true
+  programs:
+    title: Programs
+    output: true
+    permalink: "/:collection/:title"
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: programs
+  values:
+    layout: product
+    price: 100
+author: Macmillan Films
+baseurl: 
+url: https://www.macmillanfilms.com
+email: james@macmillanfilms.com
+enforce_ssl: www.macmillanfilms.com
+description: A film studio which makes eductional movies for broadcast, institutional,
+  and home use.
+image: "/assets/images/logo.svg"
+search: true
+markdown: kramdown
+plugins:
+- jekyll-octicons
+- jekyll-sitemap
+jekyll-mentions:
+  base_url: https://github.com
+compress_html:
+  ignore:
+    envs:
+    - development
+    - stage
+sass:
+  style: compressed
+exclude:
+- README.md
+- Gemfile
+- Gemfile.lock
