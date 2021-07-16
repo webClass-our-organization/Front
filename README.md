@@ -20,42 +20,25 @@
 ## License - 版权信息
 &emsp;&emsp;本项目采用MIT开源协议，希望可以共同学习，共同进步。
 ### Construction - 结构
+.
 │  .gitignore
-
 │  404.html
-
 │  favicon.ico
-
 │  Gemfile
-
 │  index.md
-
 │  LICENSE
-
 │  project.txt
-
 │  README.md
-
 │  _config.yml
-
 │  
-
 ├─.vscode
-
 │      settings.json
-
 │      
-
 ├─assets
-
 │  ├─css
-
 │  │      main.scss
-
 │  │      
-
 │  ├─images
-
 │  │      banner.jpg
 │  │      caiyun.jpg
 │  │      dotted-line-2x.png
