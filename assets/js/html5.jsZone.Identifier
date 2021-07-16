@@ -1,0 +1,11 @@
+<<<<<<< HEAD
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://github.com/macmillanfilms/macmillanfilms.github.io
+HostUrl=https://codeload.github.com/MacmillanFilms/macmillanfilms.github.io/zip/refs/heads/master
+=======
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://github.com/macmillanfilms/macmillanfilms.github.io
+HostUrl=https://codeload.github.com/MacmillanFilms/macmillanfilms.github.io/zip/refs/heads/master
+>>>>>>> a8349d20737e7762802daf927757d8110c5a777a
