@@ -1,0 +1,58 @@
+{%- if site.search -%}
+<script>
+	{%- include search/search.js -%}
+</script>
+{%- endif -%}
+
+<div  id="page" class="hfeed site">
+	<meta itemprop="image" content="{{ site.image }}" />
+	<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+		<meta itemprop="addressLocality" content="Old Greenwich" />
+		<meta itemprop="addressRegion" content="CT" />
+		<meta itemprop="postalCode" content="06870" />
+	</div>
+	<meta itemprop="priceRange" content="$" />
+	<header id="masthead" class="site-header">
+		<a class="home-link" href="{{ '/#page' | relative_url }}" title="云南特产美食网" rel="home">
+			<h2 itemprop="name" class="site-title">云南特产美食网</h2>
+			<h2 class="site-description">
+					&emsp;带您领悟舌尖上的云南！
+			</h2>
+			<h3 class="site-description">
+				&emsp;合作电话 <span itemprop="telephone">（0871）65033221</span>
+			</h3>
+		</a>
+	</header>
+	<div id="navbar" class="navbar">
+		<nav id="site-navigation" class="main-navigation">
+			<a class="screen-reader-text skip-link" href="#content" title="Skip to content">Skip to content</a>
+			<div class="menu-container">
+				<input id="home-dropdown" type="checkbox" name="menu" />
+				<label for="home-dropdown" class="menu-toggle">Menu &raquo;</label>
+				<ul class="nav-menu">
+					<li class="menu-item menu-item-home">
+						<a href="{{ '/#page' | relative_url }}">首页</a>
+					</li>
+					
+					{% for item in site.data.nav %}
+					<li>
+						<a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+					{% endfor %}
+
+					<li class="menu-item menu-item-has-children"><a>特产美食</a>
+						<ul class="sub-menu">
+							{%- for program in site.programs -%} 
+							<li>
+								<a href="{{ program.url | relative_url }}">{{ program.title }}</a>
+							</li>
+							{%- endfor -%} 
+						</ul>
+					</li>
+				</ul>
+			</div>
+			{%- if site.search -%}
+			{%- include search/searchbar.html -%}
+			{%- endif -%}
+		</nav>
+	</div>
+</div>

@@ -1,0 +1,49 @@
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<meta property="og:title" content="Macmillan Films | {{ page.title }}" />
+	<meta property="og:locale" content="en_US" />
+	{%- if page.layout == 'product' -%} 
+	<meta name="description" content="{{ page.sidetxt }}" />
+	<meta property="og:description" content="{{ page.sidetxt }}" />
+	{%- else -%} 
+	<meta name="description" content="{{ site.description }}" />
+	<meta property="og:description" content="{{ site.description }}" />
+	{%- endif -%} 
+	{%- if page.image -%} 
+	<meta property="og:image" content="{{ page.image | relative_url }}">
+	{%- else -%} 
+	<meta property="og:image" content="{{ site.image | relative_url }}">
+	{%- endif -%} 
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="canonical" href="{{ site.url }}" />
+	<meta property="og:url" content="{{ site.url }}" />
+	<meta property="og:site_name" content="Macmillan Films" />
+	{%- if page.layout == 'product' -%} 
+	<meta property="og:type" content="video.movie" />
+	{%- else -%} 
+	<meta property="og:type" content="website" />
+	{%- endif -%} 
+	<title>云南特产美食网 | {{ page.title }}</title>
+	<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" type="text/css" media="all">
+
+	<style type="text/css">
+		.site-header {
+			background:url({{ '/assets/images/banner.jpg' | relative_url }}) no-repeat scroll top;
+			margin: 0 auto;
+			max-width: 1600px;
+			background-size: 1600px auto;
+		}
+		@media (max-width: 767px) {
+			.site-header {
+				background-size: 768px auto;
+			}
+		}
+		@media (max-width: 359px) {
+			.site-header {
+				background-size: 360px auto;
+			}
+		}
+		
+	</style>
+</head>
